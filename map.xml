@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="schema.xsd">
+    <files>
+        <floor>assets/maps/example/floor.png</floor>
+        <ceiling>assets/maps/example/ceiling.png</ceiling>
+        <material>assets/maps/example/material.png</material>
+    </files>
+</map>

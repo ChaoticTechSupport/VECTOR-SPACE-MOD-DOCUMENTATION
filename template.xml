@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vectorSpaceMod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation="schema.xsd">
+    <mod>
+        <name>Example Mod</name>
+        <author>Author Name</author>
+        <description>Replace with a description of the mod.</description>
+        <version>1.0.0</version>
+    </mod>
+    <maps>
+        <map>
+            <files>
+                <floor>assets/maps/example/floor.png</floor>
+                <ceiling>assets/maps/example/ceiling.png</ceiling>
+                <material>assets/maps/example/material.png</material>
+            </files>
+        </map>
+    </maps>
+    <cards>
+        <card>
+            <name>Example Card</name>
+            <id>example-card</id>
+            <description>Replace with a description of the card.</description>
+            <traits />
+        </card>
+    </cards>
+</vectorSpaceMod>

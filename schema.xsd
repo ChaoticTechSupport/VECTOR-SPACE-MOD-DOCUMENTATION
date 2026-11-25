@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="vectorSpaceMod" type="VectorSpaceModType" />
+    <xs:element name="mod" type="ModType" />
+    <xs:element name="map" type="MapType" />
+    <xs:element name="card" type="CardType" />
+
+    <xs:complexType name="VectorSpaceModType">
+        <xs:sequence>
+            <xs:element name="mod" type="ModType" />
+            <xs:element name="maps">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="map" type="MapType" minOccurs="0" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="cards">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="card" type="CardType" minOccurs="0" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ModType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="author" type="xs:string" />
+            <xs:element name="description" type="xs:string" />
+            <xs:element name="version" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="MapType">
+        <xs:sequence>
+            <xs:element name="files">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="floor" type="xs:string" />
+                        <xs:element name="ceiling" type="xs:string" />
+                        <xs:element name="material" type="xs:string" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="CardType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="id" type="xs:ID" />
+            <xs:element name="description" type="xs:string" />
+            <xs:element name="traits">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
