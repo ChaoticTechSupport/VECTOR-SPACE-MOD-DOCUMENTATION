@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<card xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:noNamespaceSchemaLocation="schema.xsd">
-    <name>Example Card</name>
-    <id>example-card</id>
-    <description>Replace with a description of the card.</description>
-    <traits />
-</card>
